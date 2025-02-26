@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoPartes Premium</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo">AutoPartes Premium</div>
+            <div class="nav-toggle" id="navToggle">☰</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tienda">Tienda</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li class="cart-icon">
+                    <a href="#carrito">🛒 <span id="cartCount">0</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>Repuestos de Calidad para tu Vehículo</h1>
+            <p>Las mejores marcas: Ford, Chevrolet, Fiat, Chery y Volkswagen</p>
+        </section>
+
+        <section id="tienda" class="store">
+            <h2>Nuestra Tienda</h2>
+            <div class="categories">
+                <button class="category-btn active" data-brand="todos">Todos</button>
+                <button class="category-btn" data-brand="ford">Ford</button>
+                <button class="category-btn" data-brand="chevrolet">Chevrolet</button>
+                <button class="category-btn" data-brand="fiat">Fiat</button>
+                <button class="category-btn" data-brand="chery">Chery</button>
+                <button class="category-btn" data-brand="volkswagen">Volkswagen</button>
+            </div>
+            <div class="products" id="productsContainer">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </section>
+
+        <section id="nosotros" class="about">
+            <h2>Sobre Nosotros</h2>
+            <div class="about-content">
+                <p>Somos líderes en la distribución de repuestos automotrices originales y alternativos de la más alta calidad. Con más de 15 años de experiencia en el mercado, garantizamos la mejor solución para tu vehículo.</p>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <h2>Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p>📍 Av. Principal 123, Ciudad</p>
+                    <p>📞 +1 234 567 890</p>
+                    <p>✉️ info@autopartespremium.com</p>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Nombre" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Mensaje" required></textarea>
+                        <button type="submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="cart" class="cart-modal">
+        <div class="cart-content">
+            <h2>Carrito de Compras</h2>
+            <div id="cartItems"></div>
+            <div class="cart-total">
+                <p>Total: $<span id="cartTotal">0</span></p>
+                <button id="checkoutBtn">Finalizar Compra</button>
+            </div>
+            <button id="closeCart" class="close-cart">×</button>
+        </div>
+    </div>
+
+    <!-- WhatsApp ChatBot Integration -->
+    <div id="whatsapp-chat" class="whatsapp-chat">
+        <!-- WhatsApp ChatBot code will be inserted here -->
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>AutoPartes Premium</h3>
+                <p>Tu mejor opción en repuestos automotrices</p>
+            </div>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank">Facebook</a>
+                    <a href="#" target="_blank">Instagram</a>
+                    <a href="#" target="_blank">Twitter</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Ubicación</h3>
+                <div class="map">
+                    <!-- Google Maps iframe will go here -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.952912260219!2d3.375295414770757!3d6.5276316452169!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8b2ae68280c1%3A0xdc9e87a367c3d9cb!2sLagos!5e0!3m2!1sen!2sng!4v1629784514999!5m2!1sen!2sng" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 AutoPartes Premium. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
